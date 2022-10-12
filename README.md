@@ -16,9 +16,15 @@ The Kickstarter dataset contained a lot of information, and it was necessary to 
 
 In this section of the analysis, the goal was to determine any trends relating launching campaigns at certain times of the year and their outcomes, whether it succeeded, failed, or got cancelled. The first step was to isolate the specific dataset to analyze by creating a Pivot Table. In this table, the columns were assigned to the outcomes of the campaigns, and the rows to dates that they were launched. For better clarification, these dates were grouped into months of the year. Filters, such as "Parent Category" and "Year", were added as well to focus specifically on theater campaigns between 1970 and 2017. The "cancelled" outcomes were also removed from the table to focus mainly on whether campaigns succeeded or failed. Another Pivot Table was also created with the data filtered specifically for theaterical plays instead of its parent category, "theater". Pivot Charts in the form of line graphs were created based on the data in the tables to visually show the correlation between launch date and outcome of the campaign.
 
+![Theater Outcomes vs. Launch Dates](https://github.com/doliver231/kickstarter-analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png)
+
+![Play Outcomes vs. Launch Dates](https://github.com/doliver231/kickstarter-analysis/blob/main/Resources/Play_Outcomes_vs_Launch.png)
+
 ### Analysis of Outcomes Based on Goals
 
 For this analysis, the focus was made on the funding goals of each campaign and how that could have an effect on the outcomes. The funding goals dataset is substantial and with a big range. Therefore, the best option was to group the goal amounts into different ranges, such as "less than 1000", "1000 to 4999", and so forth. Using the COUNTIFS function, a table was created to feature the counts of outcomes for each range of goal amounts. Within the COUNTIFS functions used, specific criteria were designated such as the data points needed to be for plays and specific for each outcome category. Using SUM function, the total number of projects were calculated in the table for each range of goal amounts. Percentages of the total campaign projects for each outcome were then calculated and displayed on a line graph.
+
+![Outcomes vs. Goals](https://github.com/doliver231/kickstarter-analysis/blob/main/Resources/Outcomes_vs_Goals.png)
 
 ### Challenges and Difficulties Encountered
 
